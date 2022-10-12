@@ -24,8 +24,8 @@ st.sidebar.markdown(f'<h1 style="text-align: center; color:#F4D03F ;font-size:30
 st.markdown(f'<h1 style="color:#0E6655  ;font-size:50px;">{"Proyecto 9"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#000000  ;font-size:25px;">{"En este proyecto se analizará el ingreso de los trabajadores mediante el modelo Random Forest, logrando así obtener un modelo que logre predecir el salario por medio de las siguientes variables:"}</h1>', unsafe_allow_html=True)
 
-st.image('./beeswarm.png')
 st.image('./descarga.png')
+st.image('./beeswarm.png')
 
 st.markdown(f'<h1 style="color:#0E6655  ;font-size:35px;">{"Descripción sucinta de las variables"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#9A7D0A  ;font-size:25px;">{"Variable dependiente: INGLABO:"}</h1>', unsafe_allow_html=True)
@@ -126,7 +126,7 @@ if P6050 == '8. Trabajador':
 if P6050 == '9. Otro no pariente':
     P6050 = 9
     
-Archivo_2 = open('Archivo_modelo_arreglado','rb')
+Archivo_2 = pk.open('Archivo_modelo_arreglado.pk','rb')
 lista_1 = load('./Archivo_2.pk')
 print(lista_1)
     
