@@ -127,7 +127,7 @@ if P6050 == '9. Otro no pariente':
     P6050 = 9
     
 
-Archivo_2 = open('Archivo_modelo_def','rb')
+Archivo_2 = open('Archivo_modelo_def','wb')
 lista_1 = pk.load(Archivo_2)
 print(lista_1)
     
