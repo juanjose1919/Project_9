@@ -69,13 +69,6 @@ st.write("Usted trabaja", P6426, 'meses en la misma empresa')
 st.markdown(f'<h1 style="color:#9A7D0A  ;font-size:25px;">{"P6050:"}</h1>', unsafe_allow_html=True)
 P6050 = st.selectbox('¿Cuál es el parentesco de con el jefe o jefa del hogar?', ('1. Jefe(a) del hogar', '2. Pareja, esposo(a), cónyuge, compañero(a)', '3. Hijo(a), hijastro(a)', '4. Nieto(a)', '5. Otro pariente', '6. Empleado(a) del servicio doméstico y sus parientes', '7. Pensionista', '8. Trabajador', '9. Otro no pariente'))
 
- 
-a. Jefe (a) del hogar b.
-Pareja, esposo(a), cónyuge, compañero(a)
-c. Hijo(a), hijastro(a) d. Nieto(a) e. Otro
-pariente f. Empleado(a) del servicio
-doméstico y sus parientes g. Pensionista h.
-Trabajador i. 
 
 
 if P6585S4 == '1. SI':
