@@ -127,12 +127,13 @@ if P6050 == '9. Otro no pariente':
     P6050 = 9
     
 
-Archivo_2 = open('Archivo_modelo_def','wb')
+Archivo_2 = open('Archivo_modelo_def','rb')
 lista_1 = pk.load(Archivo_2)
 print(lista_1)
     
 if P6120 and  P6430 and P6100 and P6050:
-    prediccion = lista_1.predict(np.array([P6120, ESC, P6430, P6800, P6040, P6100, P6585S4]).reshape(1,7))
+    a = [P6120, ESC, P6430, P6800, P6040, P6100, P6585S4]
+    prediccion = lista_1.predict(a).reshape(1,-1))
     st.write('su salario será de', prediccion[0]) 
 
 
