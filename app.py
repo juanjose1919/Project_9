@@ -5,7 +5,7 @@ import pickle as pk
 
 
 st.sidebar.markdown(f'<h1 style="text-align: center; color:#F7D559;font-size:35px;">{"INTRODUCCIÓN"}</h1>', unsafe_allow_html=True)
-st.sidebar.markdown(f'<h1 style="text-align: center; color:#000000;font-size:22px;">{"AQUÍ ESCRIBE"}</h1>', unsafe_allow_html=True)
+st.sidebar.markdown(f'<h1 style="text-align: center; color:#000000;font-size:22px;">{"en este proyecto se analizaron diferentes variables que trataban diferentes características de una población determinada, siendo así datos importantes al momento de realizar una predicción del salario con el modelo Random Forest de regresión, sin embargo, se hizo necesario llevar a cabo tanto una limpieza de los datos como un filtro de las variables, buscando tener en cuenta aquellos datos que mayor influencia tienen sobre la predicción del ingreso como variable objetivo"}</h1>', unsafe_allow_html=True)
 
 
 
