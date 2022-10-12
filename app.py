@@ -124,7 +124,7 @@ if P6050 == '9. Otro no pariente':
     P6050 = 9
     
 Archivo_2 = open('Archivo_modelo_arreglado','rb')
-lista_1 = pk.load(Archivo_2)
+lista_1 = load('Archivo_2.pk')
 print(lista_1)
     
 if P6120 and  P6430 and P6100 and P6050:
