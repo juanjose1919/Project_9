@@ -46,7 +46,7 @@ P6430 = st.selectbox(
 P6800 = st.slider('¿Número de horas trabajadas a la semana? Escriba 0 si es menor de 1', 0, 100, 0)
 st.write("Usted trabaja", P6800, 'meses en la misma empresa')
 
-P6040 = st.slider('¿Cuantos años tiene? 18, 100, 0')
+P6040 = st.slider('¿Cuantos años tiene?')
 st.write("Usted trabaja", P6040, 'meses en la misma empresa')
 
 st.markdown(f'<h1 style="color:#9A7D0A  ;font-size:25px;">{"P6100:"}</h1>', unsafe_allow_html=True)
