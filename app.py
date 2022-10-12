@@ -67,9 +67,7 @@ st.write("Usted trabaja", P6426, 'meses en la misma empresa')
 
 
 st.markdown(f'<h1 style="color:#9A7D0A  ;font-size:25px;">{"P6050:"}</h1>', unsafe_allow_html=True)
-P6050 = st.selectbox(
-    '¿Es jefe o jefa de hogar?'
-     ('1. SI', '2. NO'))
+P6050 = st.selectbox('¿Es jefe o jefa de hogar?', ('1. SI', '2. NO'))
 
 if horas_add == '1. SI':
     horas_add = 1
