@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import pickle as pk
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.sidebar.markdown(f'<h1 style="text-align: center; color:#F7D559;font-size:35px;">{"INTRODUCCIÓN"}</h1>', unsafe_allow_html=True)
 st.sidebar.markdown(f'<h1 style="text-align: center; color:#000000;font-size:22px;">{"AQUÍ ESCRIBE"}</h1>', unsafe_allow_html=True)
