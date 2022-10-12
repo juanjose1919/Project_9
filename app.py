@@ -69,45 +69,37 @@ st.write("Usted trabaja", P6426, 'meses en la misma empresa')
 st.markdown(f'<h1 style="color:#9A7D0A  ;font-size:25px;">{"P6050:"}</h1>', unsafe_allow_html=True)
 P6050 = st.selectbox('¿Es jefe o jefa de hogar?', ('1. SI', '2. NO'))
 
-if horas_add == '1. SI':
-    horas_add = 1
-if horas_add == '2. NO':
-    horas_add = 2
-if horas_add == '3. NO SABE/NO RESPONDE':
-    horas_add = 3
 
-if subsidio == '1. SI':
-    subsidio = 1
-if subsidio == '2. NO':
-    subsidio = 2
-if subsidio == '3. NO SABE/NO RESPONDE':
-    subsidio = 3
-
-if afiliación_aseg == '1. SI':
-    afiliación_aseg = 1
-if afiliación_aseg == '2. NO':
-    afiliación_aseg = 2
-if afiliación_aseg == '3. NO SABE/NO RESPONDE':
-    afiliación_aseg = 3
+if P6585S4 == '1. SI':
+    P6585S4 = 1
+if P6585S4 == '2. NO':
+    P6585S4 = 2
+if P6585S4 == '3. NO SABE/NO RESPONDE':
+    P6585S4 = 3
 
 
-if posición_trab == '1: Obrero o empleado de empresa particular':
-    posición_trab = 1
-if posición_trab == '2: Obrero o empleado del gobierno':
-    posición_trab = 2
-if posición_trab == '3: Empleado doméstico':
-    posición_trab = 3
-if posición_trab == '4: Trabajador por cuenta propia':
-    posición_trab = 4
-if posición_trab == '5: Patrón o empleador':
-    posición_trab = 5
-if posición_trab == '6: Trabajador familiar sin remuneración':
-    posición_trab = 6
-if posición_trab == '7: Trabajador sin remuneración en empresas o negocios de otros familiares':
-    posición_trab = 7
-if posición_trab == '8: Jornalero o peón':
-    posición_trab = 8
-if posición_trab == '9: otro':
-    posición_trab = 9
+if P6100 == '1: Obrero o empleado de empresa particular':
+    P6100 = 1
+if P6100 == '2: Obrero o empleado del gobierno':
+    P6100 = 2
+if P6100 == '3: Empleado doméstico':
+    P6100 = 3
+if P6100 == '4: Trabajador por cuenta propia':
+    P6100 = 4
+if P6100 == '5: Patrón o empleador':
+    P6100 = 5
+if P6100 == '6: Trabajador familiar sin remuneración':
+    P6100 = 6
+if P6100 == '7: Trabajador sin remuneración en empresas o negocios de otros familiares':
+    P6100 = 7
+if P6100 == '8: Jornalero o peón':
+    P6100 = 8
+if P6100 == '9: otro':
+    P6100 = 9
 
+    
+if P6050 == '1. SI':
+    P6050 = 1
+if P6050 == '2. NO':
+    P6050 = 2
 
