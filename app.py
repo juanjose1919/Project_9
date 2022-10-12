@@ -67,7 +67,15 @@ st.write("Usted trabaja", P6426, 'meses en la misma empresa')
 
 
 st.markdown(f'<h1 style="color:#9A7D0A  ;font-size:25px;">{"P6050:"}</h1>', unsafe_allow_html=True)
-P6050 = st.selectbox('¿Es jefe o jefa de hogar?', ('1. SI', '2. NO'))
+P6050 = st.selectbox('¿Cuál es el parentesco de con el jefe o jefa del hogar?', ('1. Jefe(a) del hogar', '2. Pareja, esposo(a), cónyuge, compañero(a)', '3. Hijo(a), hijastro(a)', '4. Nieto(a)', '5. Otro pariente', '6. Empleado(a) del servicio doméstico y sus parientes', '7. Pensionista', '8. Trabajador', '9. Otro no pariente'))
+
+ 
+a. Jefe (a) del hogar b.
+Pareja, esposo(a), cónyuge, compañero(a)
+c. Hijo(a), hijastro(a) d. Nieto(a) e. Otro
+pariente f. Empleado(a) del servicio
+doméstico y sus parientes g. Pensionista h.
+Trabajador i. 
 
 
 if P6585S4 == '1. SI':
@@ -102,4 +110,32 @@ if P6050 == '1. SI':
     P6050 = 1
 if P6050 == '2. NO':
     P6050 = 2
+
+if P6050 == '1. Jefe(a) del hogar':
+    P6050 = 1
+if P6050 == '2. Pareja, esposo(a), cónyuge, compañero(a)':
+    P6050 = 2
+if P6050 == '3. Hijo(a), hijastro(a)':
+    P6050 = 3
+if P6050 == '4. Nieto(a)':
+    P6050 = 4
+if P6050 == '5. Otro pariente':
+    P6050 = 5
+if P6050 == '6. Empleado(a) del servicio doméstico y sus parientes':
+    P6050 = 6
+if P6050 == '7. Pensionista':
+    P6050 = 7
+if P6050 == '8. Trabajador':
+    P6050 = 8
+if P6050 == '9. Otro no pariente':
+    P6050 = 9
+    
+Archivo_2 = open('Archivo_modelo_arreglado','rb')
+lista_1 = pk.load(Archivo_2)
+print(lista_1)
+    
+if P6120 and  P6430 and P6100 and P6050:
+    prediccion = lista_1.predict(np.array([P6120, ESC, P6430, P6800, P6040, P6100, P6585S4]).reshape(1,7))
+    st.write('su salario será de', prediccion[0]) 
+
 
